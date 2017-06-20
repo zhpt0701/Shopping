@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false">
+        <shape android:shape="line" android:visible="true">
+            <stroke android:dashGap="0dp"
+                    android:width="@dimen/biankuangone"
+                    android:color="@color/bai"/>
+        </shape>
+    </item>
+    <item android:state_checked="true"
+          android:drawable="@drawable/cian">
+
+    </item>
+</selector>

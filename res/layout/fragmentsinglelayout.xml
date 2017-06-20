@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/bai"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+    <com.example.cloudAndPurchasing.customcontrol.listviewupdown.PullToRefreshLayout
+            android:id="@+id/layout_new_single"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/bai">
+        <include layout="@layout/refresh_head" />
+        <com.example.cloudAndPurchasing.customcontrol.listviewupdown.PullableListView
+                android:id="@+id/listview_single"
+                android:dividerHeight="@dimen/biankuang"
+                android:divider="@color/huibai"
+                android:listSelector="@color/touming"
+                android:background="@color/bai"
+                android:scrollbars="vertical|none"
+                style="@style/layout_qj"/>
+        <include layout="@layout/load_more" />
+    </com.example.cloudAndPurchasing.customcontrol.listviewupdown.PullToRefreshLayout>
+
+        <LinearLayout
+                android:id="@+id/linearlayout_publish_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <ProgressBar
+                    android:layout_width="@dimen/topfour"
+                    android:layout_height="@dimen/topfour"/>
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/linearlayout_orpublish"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:src="@drawable/jixiangwu"
+                    android:layout_width="wrap_content"
+                    android:background="@color/touming"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:layout_marginTop="@dimen/topone"
+                    android:textColor="@color/huise"
+                    android:textSize="@dimen/shisi"
+                    android:text="@string/jiexiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

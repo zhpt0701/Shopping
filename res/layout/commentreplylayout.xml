@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/bai"
+              android:fitsSystemWindows="true"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:background="@color/tiltle"
+            android:layout_height="@dimen/biaotigao">
+        <ImageButton
+                android:id="@+id/imagebutton_reply"
+                android:layout_weight="1"
+                android:src="@drawable/arrows_l"
+                android:background="@color/touming"
+                style="@style/layout_anniuH"/>
+        <TextView
+                android:layout_weight="2"
+                style="@style/layout_anniuH"/>
+        <TextView
+                android:layout_weight="1"
+                style="@style/layout_anniuH"/>
+    </LinearLayout>
+</LinearLayout>

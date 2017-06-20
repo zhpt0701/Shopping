@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tiltle">#dd2f50</color>
+    <color name="ygmx">#fff</color>
+    <color name="dh">#28000000</color>
+    <color name="bai">#fff</color>
+    <color name="huibai">#ebebeb</color>
+    <color name="layout_back">#fff0f0f0</color>
+    <color name="hei">#000</color>
+    <color name="huihei">#585858</color>
+    <color name="touming">#00000000</color>
+    <color name="touming_ol">#63000000</color>
+    <color name="beijing">#43000000</color>
+    <color name="huise">#797979</color>
+    <color name="anhui">#e2e2e2</color>
+    <color name="blue">#ff269dc7</color>
+    <color name="fuxuan">#e4e4e4</color>
+    <color name="xuanzhong">#eff4f3</color>
+    <color name="green">#ff20c63a</color>
+    <color name="times_green">#1ab442</color>
+    <color name="fen">#ffedde</color>
+    <color name="lin">#dadada</color>
+    <color name="bait">#66ffffff</color>
+    <color name="fenhong">#ff7891</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="yellor">#f7c61f</color>
+    <color name="dep_blue">#0070fe</color>
+    <color name="title_color">#000000</color>
+    <color name="common_action_bar_splitter">#000000</color>
+    <color name="common_signin_btn_light_text_focused">#000000</color>
+
+</resources>

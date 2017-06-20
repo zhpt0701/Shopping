@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/huibai"
+              android:layout_width="match_parent"
+              android:fitsSystemWindows="true"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:background="@color/tiltle"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="@dimen/biaotigao">
+        <Button
+                android:id="@+id/imagebutton_break"
+                style="@style/layout_yh"
+                android:paddingLeft="@dimen/topone"
+                android:drawableLeft="@drawable/arrows_l"
+                android:background="@color/touming"
+                android:layout_weight="1"
+                />
+        <TextView
+                style="@style/layout_yh"
+                android:layout_weight="3"
+                android:text="热门活动"
+                android:textSize="@dimen/shiba"
+                android:textColor="@color/bai"
+                android:gravity="center"
+                />
+        <TextView
+                style="@style/layout_yh"
+                android:layout_weight="1"
+                />
+    </LinearLayout>
+</LinearLayout>

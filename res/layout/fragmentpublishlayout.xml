@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/bai"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <com.example.cloudAndPurchasing.customcontrol.listviewupdown.PullToRefreshLayout
+                android:id="@+id/pulllayout_publishlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <include layout="@layout/refresh_head"/>
+            <com.example.cloudAndPurchasing.customcontrol.listviewupdown.PullableScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                <com.example.cloudAndPurchasing.customcontrol.ThisListView
+                        android:id="@+id/listview_publish"
+                        android:dividerHeight="@dimen/biankuang"
+                        android:divider="@color/huibai"
+                        android:listSelector="@color/touming"
+                        style="@style/layout_qj"/>
+            </com.example.cloudAndPurchasing.customcontrol.listviewupdown.PullableScrollView>
+            <include layout="@layout/load_more"/>
+        </com.example.cloudAndPurchasing.customcontrol.listviewupdown.PullToRefreshLayout>
+        <include layout="@layout/loading"/>
+    </FrameLayout>
+
+</LinearLayout>

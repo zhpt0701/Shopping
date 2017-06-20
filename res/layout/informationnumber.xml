@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:id="@+id/linealryout_this_address"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:src="@drawable/jixiangwu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:layout_marginTop="@dimen/topone"
+                android:textSize="@dimen/shisi"
+                android:textColor="@color/huise"
+                android:text="@string/jiexiao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

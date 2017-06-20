@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/bai"
+              android:fitsSystemWindows="true"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/biaotigao"
+            android:orientation="horizontal"
+            android:background="@color/tiltle"
+            android:gravity="center"
+            >
+        <Button
+
+                android:id="@+id/imagebutton_chooseaddressback"
+                style="@style/layout_anniuH"
+                android:paddingLeft="@dimen/topone"
+                android:drawableLeft="@drawable/arrows_l"
+                android:background="@color/touming"
+                android:layout_weight="1"
+                />
+        <TextView
+                style="@style/layout_anniuH"
+                android:layout_weight="3"
+                android:textSize="@dimen/shiba"
+                android:gravity="center"
+                android:textColor="@color/bai"
+                android:text="@string/dizhi"/>
+        <Button
+                android:id="@+id/imagebutton_add_chooseaddress"
+                style="@style/layout_anniuH"
+                android:paddingRight="@dimen/topone"
+                android:drawableRight="@drawable/address_plus"
+                android:background="@color/touming"
+                android:layout_weight="1"
+                />
+    </LinearLayout>
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <com.example.cloudAndPurchasing.customcontrol.listviewupdown.PullToRefreshLayout
+                android:id="@+id/chooseaddressthis"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <include layout="@layout/refresh_head"/>
+            <com.example.cloudAndPurchasing.customcontrol.listviewupdown.PullableListView
+                    android:id="@+id/listview_chooseaddress"
+                    android:divider="@color/huibai"
+                    android:dividerHeight="@dimen/topone"
+                    android:listSelector="@color/touming"
+                    style="@style/layout_qj">
+            </com.example.cloudAndPurchasing.customcontrol.listviewupdown.PullableListView>
+            <include layout="@layout/load_more"/>
+        </com.example.cloudAndPurchasing.customcontrol.listviewupdown.PullToRefreshLayout>
+        <include layout="@layout/informationnumber"/>
+        <LinearLayout
+                android:id="@+id/linearlayout_chooseactivity_progressbar"
+                android:orientation="vertical"
+                android:background="@color/beijing"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <ProgressBar
+                    android:layout_width="@dimen/topfour"
+                    android:layout_height="@dimen/topfour"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

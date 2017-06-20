@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center_vertical|left"
+              android:background="@color/bai"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+            android:id="@+id/textview_content_each"
+            android:textColor="@color/hei"
+            android:textSize="@dimen/shisi"
+            android:paddingTop="@dimen/topone"
+            android:paddingBottom="@dimen/topone"
+            android:gravity="center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+</LinearLayout>

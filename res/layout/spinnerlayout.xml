@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/spinner"
+              android:gravity="center"
+              android:layout_margin="@dimen/biankuangtwo"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+            android:id="@+id/textview_spinner"
+            android:textSize="@dimen/shisi"
+            android:singleLine="true"
+            android:gravity="center"
+            android:ellipsize="marquee"
+            android:textColor="@color/hei"
+            android:layout_width="@dimen/w_one"
+            android:layout_height="@dimen/h_threety"/>
+</LinearLayout>

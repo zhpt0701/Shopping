@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/beijing"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="@dimen/w_pop_one"
+            android:background="@color/huibai"
+            android:layout_height="@dimen/h_pop_one">
+        <TextView
+                android:textColor="@color/hei"
+                android:textSize="@dimen/shiba"
+                android:gravity="center"
+                android:background="@color/bai"
+                android:text="@string/duobaohao"
+                android:layout_weight="0.8"
+                style="@style/layout_anniuV"/>
+        <GridView
+                android:layout_marginTop="@dimen/biankuangone"
+                android:id="@+id/gridview_zhongjianghao"
+                android:layout_weight="3"
+                android:numColumns="3"
+                android:background="@color/bai"
+                android:listSelector="@color/touming"
+                style="@style/layout_anniuV">
+
+        </GridView>
+        <Button
+                android:layout_marginTop="@dimen/biankuangone"
+                android:id="@+id/button_winningpopup"
+                android:layout_weight="1.2"
+                android:text="@string/ok"
+                android:textSize="@dimen/shiba"
+                android:textColor="@color/hei"
+                android:gravity="center"
+                android:background="@color/bai"
+                style="@style/layout_anniuV"/>
+    </LinearLayout>
+</LinearLayout>

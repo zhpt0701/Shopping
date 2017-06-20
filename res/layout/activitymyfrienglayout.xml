@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:fitsSystemWindows="true"
+              android:background="#fff"
+              android:layout_height="match_parent">
+    <LinearLayout
+            style="@style/layout_x"
+            android:background="@color/tiltle"
+            android:layout_weight="1"
+            >
+        <ImageButton
+            style="@style/layout_y"
+            android:layout_weight="1"
+            />
+        <TextView
+               style="@style/layout_y"
+               android:text="添加好友"
+               android:textColor="@color/bai"
+               android:textSize="22sp"
+               android:gravity="center"
+               android:layout_weight="3"
+                />
+        <ImageButton
+                style="@style/layout_y"
+                android:layout_weight="1"
+                />
+     </LinearLayout>
+    <LinearLayout
+            style="@style/layout_x"
+            android:layout_weight="9">
+    </LinearLayout>
+</LinearLayout>

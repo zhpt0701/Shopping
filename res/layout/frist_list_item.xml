@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/locate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/locateHint"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/h_sishi"
+        android:layout_marginLeft="@dimen/topone"
+        android:gravity="center_vertical"
+        android:text="当前定位城市"
+        android:textColor="@color/hei"
+        android:textSize="@dimen/shiliu" />
+
+    <TextView
+        android:id="@+id/lng_city"
+        android:layout_width="@dimen/w_bashi"
+        android:layout_height="@dimen/h_sishi"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/h_sishi"
+        android:background="@drawable/text_selector"
+        android:clickable="true"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="甘肃"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/shiliu" />
+
+    <ProgressBar
+        android:id="@+id/pbLocate"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/toptwo"
+        android:layout_marginRight="@dimen/w_liushiwu"
+        android:layout_marginTop="@dimen/topthree" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/biankuang"
+        android:layout_marginLeft="@dimen/topone"
+        android:layout_marginRight="@dimen/w_ershi"
+        android:layout_marginTop="@dimen/h_wushi"
+        android:background="#E2E2E2" />
+
+</RelativeLayout>

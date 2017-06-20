@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="w_pop_one">206.25dp</dimen>
+    <dimen name="w_pop_two">94.5dp</dimen>
+    <dimen name="W_layout_four">6dp</dimen>
+    <dimen name="w_san">2.25dp</dimen>
+    <dimen name="w_three">22.5dp</dimen>
+    <dimen name="w_one">45dp</dimen>
+    <dimen name="w_two">9dp</dimen>
+    <dimen name="w_four">12.75dp</dimen>
+    <dimen name="w_five">18dp</dimen>
+    <dimen name="w_shier">9dp</dimen>
+    <dimen name="w_shisi">10.5dp</dimen>
+    <dimen name="w_six">24dp</dimen>
+    <dimen name="w_senven">16.5dp</dimen>
+    <dimen name="w_ershi">15dp</dimen>
+    <dimen name="w_ershiwu">18.75dp</dimen>
+    <dimen name="w_liu">4.5dp</dimen>
+    <dimen name="w_sanshisi">25.5dp</dimen>
+    <dimen name="w_sanshiba">28.5dp</dimen>
+    <dimen name="w_fourty">30dp</dimen>
+    <dimen name="w_sishiwu">33.75dp</dimen>
+    <dimen name="w_yibai">75dp</dimen>
+    <dimen name="w_wushi">37.5dp</dimen>
+    <dimen name="w_qishi">52.5dp</dimen>
+    <dimen name="w_liushiwu">48.75dp</dimen>
+    <dimen name="w_jiushi">67.5dp</dimen>
+    <dimen name="w_bashi">60dp</dimen>
+    <dimen name="w_yibaiwu">112.5dp</dimen>
+    <dimen name="w_erbaiwu">187.5dp</dimen>
+    <dimen name="w_liushiba">51dp</dimen>
+</resources>

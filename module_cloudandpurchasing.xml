@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_cloudandpurchasing" default="compile.module.cloudandpurchasing">
+  <dirname property="module.cloudandpurchasing.basedir" file="${ant.file.module_cloudandpurchasing}"/>
+  
+  <property name="module.jdk.home.cloudandpurchasing" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.cloudandpurchasing" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.cloudandpurchasing" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.cloudandpurchasing" value="-encoding UTF-8 -source 1.6 ${compiler.args}"/>
+  
+  <property name="cloudandpurchasing.output.dir" value="${module.cloudandpurchasing.basedir}/out/production/cloudAndPurchasing"/>
+  <property name="cloudandpurchasing.testoutput.dir" value="${module.cloudandpurchasing.basedir}/out/test/cloudAndPurchasing"/>
+  
+  <path id="cloudandpurchasing.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="cloudandpurchasing.module.production.classpath">
+    <path refid="${module.jdk.classpath.cloudandpurchasing}"/>
+    <pathelement location="${basedir}/libs/android-support-v4.jar"/>
+    <pathelement location="${basedir}/libs/android-support-v7-recyclerview .jar"/>
+    <pathelement location="${basedir}/libs/pinyin4j-2.5.0.jar"/>
+    <pathelement location="${basedir}/libs/gson-2.3.1.jar"/>
+    <pathelement location="${basedir}/libs/universal-image-loader-1.9.5.jar"/>
+    <pathelement location="${basedir}/libs/android-async-http-1.4.8.jar"/>
+    <pathelement location="${basedir}/libs/UPPayAssistEx.jar"/>
+    <pathelement location="${basedir}/libs/libammsdk.jar"/>
+    <pathelement location="${basedir}/libs/httpmime-4.1.3.jar"/>
+    <pathelement location="${basedir}/libs/umeng_social_sdk.jar"/>
+    <pathelement location="${basedir}/libs/SocialSDK_QQZone_3.jar"/>
+    <pathelement location="${basedir}/libs/libpingpp-2.1.3.jar"/>
+    <pathelement location="${basedir}/libs/BaiduLBS_Android.jar"/>
+    <pathelement location="${basedir}/libs/SocialSDK_WeiXin_2.jar"/>
+    <pathelement location="${basedir}/libs/weiboSDKCore_3.1.4.jar"/>
+    <pathelement location="${basedir}/libs/SocialSDK_tencentWB_2.jar"/>
+    <pathelement location="${basedir}/libs/open_sdk_r5509.jar"/>
+    <pathelement location="${basedir}/libs/SocialSDK_Sina.jar"/>
+    <pathelement location="${basedir}/libs/alipaySdk-20160223.jar"/>
+    <pathelement location="${basedir}/libs/okhttp-3.2.0.jar"/>
+    <pathelement location="${basedir}/libs/pinyin4android1.0.jar"/>
+    <pathelement location="${basedir}/libs/umeng-analytics-v6.0.1.jar"/>
+    <pathelement location="${basedir}/libs/jsoup-1.6.1.jar"/>
+    <pathelement location="${basedir}/libs/okio-1.6.0.jar"/>
+    <pathelement location="${basedir}/libs/wire-runtime-2.1.2.jar"/>
+    <pathelement location="${basedir}/libs/anrwatchdog-1.3.0.jar"/>
+  </path>
+  
+  <path id="cloudandpurchasing.runtime.production.module.classpath">
+    <pathelement location="${cloudandpurchasing.output.dir}"/>
+    <pathelement location="${basedir}/libs/android-support-v4.jar"/>
+    <pathelement location="${basedir}/libs/android-support-v7-recyclerview .jar"/>
+    <pathelement location="${basedir}/libs/pinyin4j-2.5.0.jar"/>
+    <pathelement location="${basedir}/libs/gson-2.3.1.jar"/>
+    <pathelement location="${basedir}/libs/universal-image-loader-1.9.5.jar"/>
+    <pathelement location="${basedir}/libs/android-async-http-1.4.8.jar"/>
+    <pathelement location="${basedir}/libs/UPPayAssistEx.jar"/>
+    <pathelement location="${basedir}/libs/libammsdk.jar"/>
+    <pathelement location="${basedir}/libs/httpmime-4.1.3.jar"/>
+    <pathelement location="${basedir}/libs/umeng_social_sdk.jar"/>
+    <pathelement location="${basedir}/libs/SocialSDK_QQZone_3.jar"/>
+    <pathelement location="${basedir}/libs/libpingpp-2.1.3.jar"/>
+    <pathelement location="${basedir}/libs/BaiduLBS_Android.jar"/>
+    <pathelement location="${basedir}/libs/SocialSDK_WeiXin_2.jar"/>
+    <pathelement location="${basedir}/libs/weiboSDKCore_3.1.4.jar"/>
+    <pathelement location="${basedir}/libs/SocialSDK_tencentWB_2.jar"/>
+    <pathelement location="${basedir}/libs/open_sdk_r5509.jar"/>
+    <pathelement location="${basedir}/libs/SocialSDK_Sina.jar"/>
+    <pathelement location="${basedir}/libs/alipaySdk-20160223.jar"/>
+    <pathelement location="${basedir}/libs/okhttp-3.2.0.jar"/>
+    <pathelement location="${basedir}/libs/pinyin4android1.0.jar"/>
+    <pathelement location="${basedir}/libs/umeng-analytics-v6.0.1.jar"/>
+    <pathelement location="${basedir}/libs/jsoup-1.6.1.jar"/>
+    <pathelement location="${basedir}/libs/okio-1.6.0.jar"/>
+    <pathelement location="${basedir}/libs/wire-runtime-2.1.2.jar"/>
+    <pathelement location="${basedir}/libs/anrwatchdog-1.3.0.jar"/>
+  </path>
+  
+  <path id="cloudandpurchasing.module.classpath">
+    <path refid="${module.jdk.classpath.cloudandpurchasing}"/>
+    <pathelement location="${cloudandpurchasing.output.dir}"/>
+    <pathelement location="${basedir}/libs/android-support-v4.jar"/>
+    <pathelement location="${basedir}/libs/android-support-v7-recyclerview .jar"/>
+    <pathelement location="${basedir}/libs/pinyin4j-2.5.0.jar"/>
+    <pathelement location="${basedir}/libs/gson-2.3.1.jar"/>
+    <pathelement location="${basedir}/libs/universal-image-loader-1.9.5.jar"/>
+    <pathelement location="${basedir}/libs/android-async-http-1.4.8.jar"/>
+    <pathelement location="${basedir}/libs/UPPayAssistEx.jar"/>
+    <pathelement location="${basedir}/libs/libammsdk.jar"/>
+    <pathelement location="${basedir}/libs/httpmime-4.1.3.jar"/>
+    <pathelement location="${basedir}/libs/umeng_social_sdk.jar"/>
+    <pathelement location="${basedir}/libs/SocialSDK_QQZone_3.jar"/>
+    <pathelement location="${basedir}/libs/libpingpp-2.1.3.jar"/>
+    <pathelement location="${basedir}/libs/BaiduLBS_Android.jar"/>
+    <pathelement location="${basedir}/libs/SocialSDK_WeiXin_2.jar"/>
+    <pathelement location="${basedir}/libs/weiboSDKCore_3.1.4.jar"/>
+    <pathelement location="${basedir}/libs/SocialSDK_tencentWB_2.jar"/>
+    <pathelement location="${basedir}/libs/open_sdk_r5509.jar"/>
+    <pathelement location="${basedir}/libs/SocialSDK_Sina.jar"/>
+    <pathelement location="${basedir}/libs/alipaySdk-20160223.jar"/>
+    <pathelement location="${basedir}/libs/okhttp-3.2.0.jar"/>
+    <pathelement location="${basedir}/libs/pinyin4android1.0.jar"/>
+    <pathelement location="${basedir}/libs/umeng-analytics-v6.0.1.jar"/>
+    <pathelement location="${basedir}/libs/jsoup-1.6.1.jar"/>
+    <pathelement location="${basedir}/libs/okio-1.6.0.jar"/>
+    <pathelement location="${basedir}/libs/wire-runtime-2.1.2.jar"/>
+    <pathelement location="${basedir}/libs/anrwatchdog-1.3.0.jar"/>
+  </path>
+  
+  <path id="cloudandpurchasing.runtime.module.classpath">
+    <pathelement location="${cloudandpurchasing.testoutput.dir}"/>
+    <pathelement location="${cloudandpurchasing.output.dir}"/>
+    <pathelement location="${basedir}/libs/android-support-v4.jar"/>
+    <pathelement location="${basedir}/libs/android-support-v7-recyclerview .jar"/>
+    <pathelement location="${basedir}/libs/pinyin4j-2.5.0.jar"/>
+    <pathelement location="${basedir}/libs/gson-2.3.1.jar"/>
+    <pathelement location="${basedir}/libs/universal-image-loader-1.9.5.jar"/>
+    <pathelement location="${basedir}/libs/android-async-http-1.4.8.jar"/>
+    <pathelement location="${basedir}/libs/UPPayAssistEx.jar"/>
+    <pathelement location="${basedir}/libs/libammsdk.jar"/>
+    <pathelement location="${basedir}/libs/httpmime-4.1.3.jar"/>
+    <pathelement location="${basedir}/libs/umeng_social_sdk.jar"/>
+    <pathelement location="${basedir}/libs/SocialSDK_QQZone_3.jar"/>
+    <pathelement location="${basedir}/libs/libpingpp-2.1.3.jar"/>
+    <pathelement location="${basedir}/libs/BaiduLBS_Android.jar"/>
+    <pathelement location="${basedir}/libs/SocialSDK_WeiXin_2.jar"/>
+    <pathelement location="${basedir}/libs/weiboSDKCore_3.1.4.jar"/>
+    <pathelement location="${basedir}/libs/SocialSDK_tencentWB_2.jar"/>
+    <pathelement location="${basedir}/libs/open_sdk_r5509.jar"/>
+    <pathelement location="${basedir}/libs/SocialSDK_Sina.jar"/>
+    <pathelement location="${basedir}/libs/alipaySdk-20160223.jar"/>
+    <pathelement location="${basedir}/libs/okhttp-3.2.0.jar"/>
+    <pathelement location="${basedir}/libs/pinyin4android1.0.jar"/>
+    <pathelement location="${basedir}/libs/umeng-analytics-v6.0.1.jar"/>
+    <pathelement location="${basedir}/libs/jsoup-1.6.1.jar"/>
+    <pathelement location="${basedir}/libs/okio-1.6.0.jar"/>
+    <pathelement location="${basedir}/libs/wire-runtime-2.1.2.jar"/>
+    <pathelement location="${basedir}/libs/anrwatchdog-1.3.0.jar"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.cloudandpurchasing">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.cloudandpurchasing">
+    <patternset refid="excluded.from.module.cloudandpurchasing"/>
+  </patternset>
+  
+  <path id="cloudandpurchasing.module.sourcepath">
+    <dirset dir="${module.cloudandpurchasing.basedir}">
+      <include name="src"/>
+      <include name="gen"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.cloudandpurchasing" depends="compile.module.cloudandpurchasing.production,compile.module.cloudandpurchasing.tests" description="Compile module cloudAndPurchasing"/>
+  
+  <target name="compile.module.cloudandpurchasing.production" depends="register.custom.compilers" description="Compile module cloudAndPurchasing; production classes">
+    <mkdir dir="${cloudandpurchasing.output.dir}"/>
+    <javac2 destdir="${cloudandpurchasing.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.cloudandpurchasing}/javac">
+      <compilerarg line="${compiler.args.cloudandpurchasing}"/>
+      <bootclasspath refid="cloudandpurchasing.module.bootclasspath"/>
+      <classpath refid="cloudandpurchasing.module.production.classpath"/>
+      <src refid="cloudandpurchasing.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.cloudandpurchasing"/>
+    </javac2>
+    
+    <copy todir="${cloudandpurchasing.output.dir}">
+      <fileset dir="${module.cloudandpurchasing.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.cloudandpurchasing.basedir}/gen">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.cloudandpurchasing.tests" depends="register.custom.compilers,compile.module.cloudandpurchasing.production" description="compile module cloudAndPurchasing; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.cloudandpurchasing" description="cleanup module">
+    <delete dir="${cloudandpurchasing.output.dir}"/>
+    <delete dir="${cloudandpurchasing.testoutput.dir}"/>
+  </target>
+</project>

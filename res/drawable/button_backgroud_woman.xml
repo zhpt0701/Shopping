@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/huise"/>
+            <corners android:bottomLeftRadius="@dimen/toptwo"
+                     android:bottomRightRadius="@dimen/toptwo"/>
+        </shape>
+    </item>
+    <item android:top="@dimen/biankuang"
+            android:bottom="@dimen/biankuang"
+            android:left="@dimen/biankuang"
+            android:right="@dimen/biankuang"
+            >
+        <shape>
+            <solid android:color="@color/bai"/>
+            <corners android:bottomLeftRadius="@dimen/toptwo"
+                     android:bottomRightRadius="@dimen/toptwo"/>
+        </shape>
+    </item>
+</layer-list>

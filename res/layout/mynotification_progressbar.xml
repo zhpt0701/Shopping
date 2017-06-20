@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center_vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ProgressBar
+            android:id="@+id/pb_notifi"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="fill_parent"
+            android:layout_marginRight="@dimen/topone"
+            android:layout_marginLeft="@dimen/topone"
+            android:background="@drawable/backgrounddownloading"
+            android:progressDrawable="@drawable/downloading"
+            android:layout_height="@dimen/topone"/>
+    <Button
+            android:id="@+id/tv_downInfo"
+            android:layout_marginLeft="@dimen/topone"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/topone"
+            android:layout_height="@dimen/h_sishi"/>
+</LinearLayout>

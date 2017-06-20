@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+               android:orientation="horizontal"
+              android:gravity="center_vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:id="@+id/imageview_invite_photos"
+                    android:layout_width="@dimen/w_liushiwu"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/topone"
+                    android:layout_marginTop="@dimen/topone"
+                    android:layout_marginBottom="@dimen/topone"
+                    android:layout_height="@dimen/h_liushiwu"/>
+            <LinearLayout
+                    android:layout_marginTop="@dimen/topone"
+                    android:layout_marginBottom="@dimen/topone"
+                    android:layout_marginLeft="@dimen/topone"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                <TextView
+                        android:id="@+id/textview_invitenickname"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/shisi"
+                        android:textColor="@color/blue"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/textview_invitethisphonenumber"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/shisi"
+                        android:textColor="@color/hei"
+                        android:layout_marginTop="@dimen/toptwo"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/textview_invitezhuzhi"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/shisi"
+                        android:visibility="gone"
+                        android:textColor="@color/hei"
+                        android:layout_marginTop="@dimen/toptwo"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <CheckBox
+                android:id="@+id/button_xuangzhong"
+                android:layout_width="@dimen/topfour"
+                android:layout_marginRight="@dimen/topthree"
+                android:layout_gravity="center_vertical|right"
+                android:background="@drawable/checkbox"
+                android:button="@null"
+                android:layout_height="@dimen/topfour"/>
+    </FrameLayout>
+
+
+</LinearLayout>

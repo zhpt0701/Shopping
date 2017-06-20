@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/bai"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ImageView
+            android:id="@+id/iamgeveiw_cloudroom"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/pic_icon"
+            android:layout_height="wrap_content"/>
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+    <com.example.cloudAndPurchasing.customcontrol.listviewupdown.PullToRefreshLayout
+            android:id="@+id/layout_new_room"
+            android:layout_marginTop="@dimen/toptwo"
+            android:layout_marginBottom="@dimen/toptwo"
+            android:layout_marginLeft="@dimen/toptwo"
+            android:layout_marginRight="@dimen/toptwo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <include layout="@layout/refresh_head"/>
+        <com.example.cloudAndPurchasing.customcontrol.listviewupdown.PullableListView
+                android:id="@+id/listView_cloudroom"
+                android:dividerHeight="@dimen/toptwo"
+                android:divider="@color/touming"
+                android:listSelector="@color/touming"
+                android:background="@color/bai"
+                android:scrollbars="vertical|none"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                />
+        <include layout="@layout/load_more"/>
+    </com.example.cloudAndPurchasing.customcontrol.listviewupdown.PullToRefreshLayout>
+        <include layout="@layout/loading"/>
+    </FrameLayout>
+</LinearLayout>

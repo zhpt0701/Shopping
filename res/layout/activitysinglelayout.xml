@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+              android:background="@color/bai"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/tiltle"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="@dimen/biaotigao">
+        <Button
+                android:id="@+id/iamgebutton_return"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/topone"
+                android:drawableLeft="@drawable/arrows_l"
+                android:background="@color/touming"
+                style="@style/layout_anniuH"/>
+        <TextView
+                style="@style/layout_anniuH"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textColor="@color/bai"
+                android:textSize="@dimen/shiba"
+                android:text="@string/goods_share"/>
+        <TextView
+                android:layout_weight="1"
+                style="@style/layout_anniuH"
+                />
+    </LinearLayout>
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <com.example.cloudAndPurchasing.customcontrol.listviewupdown.PullToRefreshLayout
+                android:id="@+id/pulllayout_single"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <include layout="@layout/refresh_head"/>
+            <com.example.cloudAndPurchasing.customcontrol.listviewupdown.PullableListView
+                    android:id="@+id/listview_goodsshare"
+                    android:dividerHeight="@dimen/biankuang"
+                    android:divider="@color/huibai"
+                    android:listSelector="@color/touming"
+                    style="@style/layout_qj"/>
+            <include layout="@layout/load_more"/>
+        </com.example.cloudAndPurchasing.customcontrol.listviewupdown.PullToRefreshLayout>
+
+        <LinearLayout
+                android:id="@+id/linearlayout_publish_all"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:background="@color/beijing"
+                android:layout_width="@dimen/w_wushi"
+                android:layout_height="@dimen/h_wushi">
+        <ProgressBar
+                android:layout_width="@dimen/topfour"
+                android:layout_height="@dimen/topfour"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

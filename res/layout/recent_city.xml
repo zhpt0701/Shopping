@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/recentHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/topone"
+        android:layout_marginTop="@dimen/toptwo"
+        android:text="最近访问城市"
+        android:textColor="@color/hei"
+        android:textSize="@dimen/shiliu" />
+
+    <com.example.cloudAndPurchasing.mothendsol.MyGridView
+        android:id="@+id/recent_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/topfour"
+        android:layout_marginRight="@dimen/w_three"
+        android:layout_marginTop="@dimen/topthree"
+        android:horizontalSpacing="@dimen/topfour"
+        android:listSelector="@color/huise"
+        android:numColumns="3"
+        android:verticalSpacing="@dimen/topone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/biankuang"
+        android:layout_marginLeft="@dimen/topone"
+        android:layout_marginRight="@dimen/w_ershi"
+        android:layout_marginTop="@dimen/topthree"
+        android:background="#E2E2E2" />
+
+</LinearLayout>

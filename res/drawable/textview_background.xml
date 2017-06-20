@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checkable="false">
+        <shape>
+            <solid android:color="@color/bai"/>
+        </shape>
+    </item>
+    <item android:state_checkable="true">
+        <shape>
+            <stroke android:width="@dimen/biankuang"
+                    android:color="@color/tiltle"/>
+        </shape>
+    </item>
+</selector>

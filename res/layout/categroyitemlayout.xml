@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@drawable/listview_back"
+              android:layout_height="wrap_content">
+    <TextView
+            android:id="@+id/textview_categroy"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/shisi"
+            android:textColor="@color/textview_coloritem"
+            android:gravity="center"
+            android:duplicateParentState="true"
+            android:paddingBottom="@dimen/h_shisan"
+            android:paddingTop="@dimen/h_shisan"
+            android:layout_height="wrap_content"/>
+</LinearLayout>

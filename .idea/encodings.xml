@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/assets/meituan_cities.db" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/libs/pinyin4android1.0.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/cityhot_edittext_bg.9.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/title_bar_background.9.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/wb_btn_off_normal.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/wb_city_search_bg.9.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/res/drawable-hdpi/wb_search_icon.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/res/drawable/item_selector.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/res/drawable/text_selector.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/res/layout/frist_list_item.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/res/layout/item_city.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/res/layout/list_item.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/res/layout/overlay.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/res/layout/recent_city.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/res/layout/total_item.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/example/cloudAndPurchasing/mothendsol/DBHelper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/example/cloudAndPurchasing/mothendsol/DatabaseHelper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/example/cloudAndPurchasing/mothendsol/MyGridView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/com/example/cloudAndPurchasing/mothendsol/MyLetterListView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/example/cloudAndPurchasing/mothendsol/PingYinUtil.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

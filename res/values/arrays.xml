@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array name="city">
+        <item>请选择城市位置</item>
+    </string-array>
+</resources>

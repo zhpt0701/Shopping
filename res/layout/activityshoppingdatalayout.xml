@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+              android:background="@color/bai"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:background="@color/tiltle"
+            android:layout_height="@dimen/biaotigao">
+        <Button
+                android:id="@+id/imagebutton_eachdataback"
+                android:paddingLeft="@dimen/topone"
+                android:drawableLeft="@drawable/arrows_l"
+                android:background="@color/touming"
+                android:layout_weight="1"
+                style="@style/layout_anniuH"/>
+        <TextView
+                android:layout_weight="3"
+                android:textSize="@dimen/shiba"
+                android:text="@string/each_th"
+                android:textColor="@color/bai"
+                android:gravity="center"
+                style="@style/layout_anniuH"/>
+        <Button
+                android:id="@+id/button_eachdata"
+                android:layout_weight="1"
+                android:background="@color/touming"
+                android:paddingRight="@dimen/topone"
+                android:gravity="right|center_vertical"
+                android:textSize="@dimen/shiliu"
+                android:textColor="@color/bai"
+                style="@style/layout_anniuH"/>
+    </LinearLayout>
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+    <com.example.cloudAndPurchasing.customcontrol.listviewupdown.PullToRefreshLayout
+            android:id="@+id/pulltorelayout_shoppingeach"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <include layout="@layout/refresh_head" />
+        <com.example.cloudAndPurchasing.customcontrol.listviewupdown.PullableListView
+                android:id="@+id/listview_eachdata"
+                android:divider="@color/huibai"
+                android:dividerHeight="@dimen/biankuangone"
+                android:listSelector="@color/touming"
+                style="@style/layout_qj">
+
+        </com.example.cloudAndPurchasing.customcontrol.listviewupdown.PullableListView>
+        <include layout="@layout/load_more"/>
+    </com.example.cloudAndPurchasing.customcontrol.listviewupdown.PullToRefreshLayout>
+
+        <include layout="@layout/loading"/>
+    </FrameLayout>
+</LinearLayout>

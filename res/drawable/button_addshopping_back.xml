@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <stroke android:width="@dimen/layout_one"
+                    android:color="@color/huibai"
+                    android:dashGap="@dimen/layout_one"
+                    android:dashWidth="@dimen/layout_one"
+                    />
+            <size android:height="@dimen/layout_one"/>
+        </shape>
+    </item>
+</selector>
